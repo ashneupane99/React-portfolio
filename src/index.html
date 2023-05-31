@@ -1,21 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fotnawesome cdnjs  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-import './App.css';
-import "./style.css"
-import profile from "./assets/profile.jpeg";
-import ec from "./assets/ec.png"
+    <!-- fonts from google -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Aashutosh's Portfolio</title>
 
-
-function App() {
-  return (
-<div className="">
+</head>
+<body>
     
-    {/* <!-- Dark mode button  --> */}
-<input type="checkbox" id="darkmode" class="dark-mode-checkbox"/> 
+    <!-- Dark mode button  -->
+<input type="checkbox" id="darkmode" class="dark-mode-checkbox"> 
  
  <div class="wrapper">
     <label for="darkmode"><i class="fa-solid fa-circle-half-stroke dark-mode-toggle"></i></label>
 
-    {/* <!-- header section  --> */}
+    <!-- header section  -->
     <header class=" flex primary-header" id="header">
         <div class="logo flex">
             <div>
@@ -31,7 +39,7 @@ function App() {
         </div>
 
         <div class="right">
-            <input type="checkbox" id="check"/>
+            <input type="checkbox" id="check">
             <label for="check" class="menu-icon"><i class="fa-sharp fa-solid fa-bars  "></i></label>
             <ul class="navigation flex">
                 <li>
@@ -60,11 +68,11 @@ function App() {
         
     </header>
 
-    {/* <!-- hero section  --> */}
+    <!-- hero section  -->
 <section class="section1 grid" id="home">
 
     <div class="left flex">
-        <img src= {profile} alt="profile pic"  />
+        <img src="./assets/profile.jpeg" alt="profile pic" >
     </div>
     <div class="right flex">
         <div class="flex">
@@ -77,12 +85,12 @@ function App() {
     </div>
 </section>
 
-    {/* <!-- banner section  --> */}
-<section class="section2">
+    <!-- banner section  -->
+    <section class="section2">
         <div class="info-container flex">
             <div class="info-list flex">
 
-                {/* <!-- award  --> */}
+                <!-- award  -->
                 <div class="info-content flex">
                     <div class="icon-container flex">
                         <i class="fa-solid fa-award"></i>
@@ -94,7 +102,7 @@ function App() {
                     <div class="info-divider"></div>
                 
                 
-                 {/* <!-- project complete --> */}
+                 <!-- project complete -->
                  <div class="info-content flex">
                     <div class="icon-container flex">
                         <i class="fa-solid fa-award"></i>
@@ -104,7 +112,7 @@ function App() {
                         <p>Completed</p>
                     </span>
                     <div class="info-divider"></div>
-                    {/* <!-- year experience  --> */}
+                    <!-- year experience  -->
                     <div class="info-content flex">
                         <div class="icon-container flex">
                             <i class="fa-solid fa-award"></i>
@@ -116,11 +124,9 @@ function App() {
                  </div>
             </div>
         </div>
-        </div>
-        </div>
-</section>
+    </section>
 
-    {/* <!-- skills section  --> */}
+    <!-- skills section  -->
     <section class="section3" id="skills">
         <div class="skills-container flex">
             <div class="flex">
@@ -145,13 +151,13 @@ function App() {
             </div>
         </div>
     </section>
-    {/* <!-- projects section --> */}
+    <!-- projects section -->
     <section class="section4 flex" id="projects">
     <h2 class="title">My Recent Work</h2>
     <div class="projects-container grid">
         <div class="project-card flex">
             <div class="top">
-                <img src={ec} alt=""/>
+                <img src="./assets/ec.png" alt="">
             </div>
             <div class="bottom">
                 <p>Full Stack Web App built with React & Firebase </p>
@@ -161,7 +167,7 @@ function App() {
         </div>
         <div class="project-card flex">
             <div class="top">
-                <img src={ec} alt=""/>
+                <img src="./assets/ec.png" alt="">
             </div>
             <div class="bottom">
                 <p>Full Stack Web App built with React & Firebase </p>
@@ -171,7 +177,7 @@ function App() {
         </div>
         <div class="project-card flex">
             <div class="top">
-                <img src={ec} alt=""/>
+                <img src="./assets/ec.png" alt="">
             </div>
             <div class="bottom">
                 <p>Full Stack Web App built with React & Firebase </p>
@@ -181,7 +187,7 @@ function App() {
         </div>
         <div class="project-card flex">
             <div class="top">
-                <img src={ec} alt=""/>
+                <img src="./assets/ec.png" alt="">
             </div>
             <div class="bottom">
                 <p>Full Stack Web App built with React & Firebase </p>
@@ -191,12 +197,12 @@ function App() {
         </div>
     </div>
     </section>
-    {/* <!-- about me section  --> */}
+    <!-- about me section  -->
     <section class="section5 flex" id="about">
         <h2 class="title">About Me</h2>
         <div class="about-container flex">
             <div class="left">
-                <img src={profile}width="250vw" alt=""/>
+                <img src="./assets/profile.jpeg" width="250vw" alt="">
             </div>
             <div class="right flex">
                 <h2>Aashutosh Neupane</h2>
@@ -215,7 +221,7 @@ function App() {
 
     </section>
 
-    {/* <!-- get in touch section  --> */}
+    <!-- get in touch section  -->
     <section class="section6 flex" id="contact">
         <h2 class="title">Get In Touch</h2>
         <div class="socials flex">
@@ -234,14 +240,14 @@ function App() {
             </div>
         </div>
     </section>
-   {/* <!-- round  button  --> */}
+   <!-- round  button  -->
 
   <button class="round " id="home">
     <a href="#home" > <i class="fa-solid fa-arrow-up-long"></i></a>
    
   </button>
 
-    {/* <!-- footer section  --> */}
+    <!-- footer section  -->
     <footer>
         <div class="footer-container flex">
             <div class="flex links">
@@ -279,10 +285,5 @@ function App() {
         </div>
     </footer>
 </div>
-
- </div>
-
-  );
-}
-
-export default App;
+</body>
+</html>
