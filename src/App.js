@@ -1,19 +1,18 @@
 
 import './App.css';
 import "./style.css"
-import profile from "./assets/profile.jpeg";
-import ec from "./assets/ec.png"
-import { Header } from './Components/Header';
 import { Hero } from './Components/Hero';
 import { Skills } from './Components/Skills';
 import { Projects } from './Components/Projects';
 import { About } from './Components/About';
 import { Getintouch } from './Components/Getintouch';
 import { Footer } from './Components/Footer';
+import { Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
+    
 <div className="">
     
     {/* <!-- Dark mode button  --> */}
@@ -21,26 +20,31 @@ function App() {
  
  <div class="wrapper">
   {/* <!-- header section  --> */}
- <Header/>
 
-    
-   
+
+
+ <Routes> 
+ <Route path="/" element= {<Hero/>}/>
+ <Route path="skills" element= {<Skills/>}/>
+ <Route path="projects" element= { <Projects/>}/>
+ <Route path="about" element= {<About/>}/>
+ <Route path="contact" element= {  <Getintouch/>}/>
 
     {/* <!-- hero section  --> & {/* <!-- banner section  -->  */} 
-<Hero/>
 
-   
+
+</Routes>
 
 
     {/* <!-- skills section  --> */}
-    <Skills/>
+   
     {/* <!-- projects section --> */}
-   <Projects/>
+  
     {/* <!-- about me section  --> */}
-    <About/>
+    
 
     {/* <!-- get in touch section  --> */}
-    <Getintouch/>
+   
    {/* <!-- round  button  --> */}
 
   <button class="round " id="home">
@@ -49,7 +53,7 @@ function App() {
   </button>
 
     {/* <!-- footer section  --> */}
-   <Footer/>
+
 </div>
 
  </div>

@@ -637,7 +637,8 @@ ul{
                         flex-direction: row;
     
                         span{
-                            padding: 0.5rem 0.7rem;
+                            padding: 0.5rem 0;
+                            background: rgba(246, 221, 221, 0.431);
                             border-radius: 10px;
                             &:hover{
                                 cursor: pointer;

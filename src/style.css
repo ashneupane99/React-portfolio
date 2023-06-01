@@ -501,7 +501,8 @@ ul {
     flex-direction: row;
   }
   .section5 .about-container .right div div span {
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem 0;
+    background: rgba(246, 221, 221, 0.431);
     border-radius: 10px;
   }
   .section5 .about-container .right div div span:hover {

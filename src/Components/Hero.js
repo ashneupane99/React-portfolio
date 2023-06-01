@@ -1,11 +1,14 @@
 import React from 'react'
 import profile from "../assets/profile.jpeg"
 import resume from "../assets/resume.pdf"
+import { Layout } from './Layout'
 
 
 export const Hero = () => {
   return (
-    <div><section class="section1 grid" id="home">
+    <Layout>
+        
+<section class="section1 grid" id="home">
 
     <div class="left flex">
         <img src= {profile} alt="profile pic"  />
@@ -61,6 +64,6 @@ export const Hero = () => {
         </div>
         </div>
 </section>
-</div>
+</Layout>
   )
 }
